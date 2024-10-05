@@ -1,0 +1,36 @@
+{
+  "name": "@butility/router",
+  "version": "1.0.0",
+  "description": "Router for the browser with many features from @butility",
+  "main": "router.js",
+  "scripts": {
+    "build:types": "tsc --declaration --allowJs --emitDeclarationOnly router.js",
+    "build": "esbuild src/index.ts --bundle --outfile=router.js --format=esm",
+    "format": "prettier --write src/**/*.ts",
+    "type-check": "tsc --noEmit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butility/router.git"
+  },
+  "keywords": [
+    "butility",
+    "router"
+  ],
+  "author": "Ermiyas Arage <ermiyasarage2023@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/butility/router/issues"
+  },
+  "homepage": "https://github.com/butility/router#readme",
+  "devDependencies": {
+    "@types/node": "^22.7.4",
+    "esbuild": "^0.24.0",
+    "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "@butility/dom": "^1.0.0"
+  }
+}
